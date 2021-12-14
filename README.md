@@ -28,5 +28,5 @@
    <li>Сборка проекта в отдельную папку /dist, выполняется командой: gulp build </li>
 </ol>  
 
-<img src="images/img.png" alt="gulp">
+<img src="img.png" alt="gulp">
   
