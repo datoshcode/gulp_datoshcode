@@ -78,6 +78,7 @@ function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
+// Перечень команд терминала (консоли) для выполнения отдельных операций:
 // gulp styles - Преобразовать *.scss в .css и сохранить в app/css
 exports.styles = styles; 
 // gulp watching - Следить за изменениями в проекте
@@ -91,7 +92,8 @@ exports.images = images;
 // gulp del - Удалить папку /dist
 exports.cleanDist = cleanDist;
 
-// gulp build - Удаление и перезапись содержимого папки /dist
-exports.build = series(cleanDist, images, build);
-// gulp - Запуск всех команд
+// Перечень команд терминала (консоли) для компиляции и сборки проекта:
+// gulp - Запуск компиляции проекта. Для остановки процесса - Ctrl+C.
 exports.default = parallel(styles, scripts, browsersync, watching);
+// gulp build - Сборка проекта в /dist
+exports.build = series(cleanDist, images, build);
