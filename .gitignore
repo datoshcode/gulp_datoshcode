@@ -1,13 +1,14 @@
-# Игнорировать файлы от Apple
+# Игнорировать файлы Mac OS
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Игнорировать каталог node_modules 
+# Игнорировать каталог node_modules gulp
 node_modules/ 
+npm-debug.*
 
-# Игнорировать каталог css
-app/css/
+# Игнорирование каталогов
+build/
 
 # Игнорирование логов 
 logs 
@@ -16,7 +17,10 @@ logs
 # Игнорирование файла содержащий переменные окружения  
 .env 
 
-# Игнорирование файлов специфичных для IDE 
-.idea/ 
+# Игнорирование файлов специфичных для редакторов и IDE 
+.idea/
+.webstorm/
+.idea/*
 .vscode/ 
 *.sw*
+*.sublime*
