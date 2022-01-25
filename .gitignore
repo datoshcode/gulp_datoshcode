@@ -20,6 +20,8 @@ logs
 # Игнорирование файлов специфичных для редакторов и IDE 
 .idea/
 .webstorm/
+.phpstorm/
+.pycharm/
 .idea/*
 .vscode/ 
 *.sw*
